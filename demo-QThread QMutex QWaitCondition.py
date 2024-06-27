@@ -7,7 +7,7 @@ from PySide6.QtWidgets import (
     QVBoxLayout,
     QWidget,
 )
-from PySide6.QtCore import QThread, Qt, Signal, Slot, QMutex, QWaitCondition
+from PySide6.QtCore import QThread, Signal, Slot, QMutex, QWaitCondition, Qt
 
 
 class CounterThread(QThread):
@@ -33,6 +33,7 @@ class CounterThread(QThread):
 
     def stop(self):
         self._running = False
+        self.resume()  # Ensure the thread is not paused when stopping
 
     def pause(self):
         self.mutex.lock()
