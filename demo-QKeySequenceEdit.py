@@ -1,3 +1,4 @@
+# 利用QKeySequence设置快捷键, 并用pynput监听全局快捷键
 import sys
 from PySide6.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QPushButton, QKeySequenceEdit
 from PySide6.QtGui import QKeySequence

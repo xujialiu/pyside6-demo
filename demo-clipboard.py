@@ -1,5 +1,6 @@
+# 显示剪切板的app
+
 from PySide6.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout
-from PySide6.QtGui import QClipboard
 import sys
 
 class ClipboardDemo(QWidget):

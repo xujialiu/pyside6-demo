@@ -1,3 +1,4 @@
+# 利用threading, 并使用pyaudio播放音频
 import sys
 from PySide6.QtWidgets import (
     QApplication,
